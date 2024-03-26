@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- browser title -->
+    <title>JavaScript Tutorial</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka Sharashenidze" />
+    <meta name="description" content="JavaScript Tutorial" />
+    <meta name="keywords" content="JavaScript Tutorial, JavaScript, Tutorial" />
+    <meta http-equiv="refresh" content="200" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- browser icon -->
+    <link rel="icon" type="image/x-icon" href="../favicon/JavaScript.ico" />
+  </head>
+  <body>
+    <!-- inline js -->
+    <!-- <button onclick="alert('hello world')">click me</button> -->
+
+    <!-- internal js -->
+    <!-- <button>click me</button>
+    <button>click me</button>
+    <button>click me</button> -->
+
+    <!-- <script>
+      document.querySelectorAll("button").forEach(item => {
+        item.addEventListener("click", () => {
+          alert("hello i m button");
+        });
+      });
+    </script> -->
+
+    <!-- external js -->
+    <!-- <button>click me</button>
+    <button>click me</button>
+    <button>click me</button> -->
+
+    <!-- javascript parts -->
+
+    <!-- get elements by id -->
+    <!-- <h1 id="title">hello</h1>
+    <button id="btn">click me</button> -->
+
+    <!-- get elements by tag name -->
+    <!-- <h2>hello world</h2>
+    <h2>hello people</h2>
+    <ul>
+      <li class="special">apple</li>
+      <li class="special">orange</li>
+      <li>banana</li>
+      <li class="special">pear</li>
+      <li>tomato</li>
+    </ul> -->
+
+    <!-- query selectors -->
+    <!-- <ul id="result">
+      <li class="special">apple</li>
+      <li class="special">orange</li>
+      <li>banana</li>
+      <li class="special last">pear</li>
+      <li>tomato</li>
+    </ul> -->
+
+    <!-- navigate to DOM - children -->
+    <!-- access children with query selector without using any methods -->
+    <!-- <ul id="result">
+      <li>apple</li>
+      <li>orange</li>
+      <li>banana</li>
+      <li>pear</li>
+      <li>tomato</li>
+    </ul> -->
+
+    <!-- navigate to DOM - parentElement -->
+    <!-- <div id="result">
+      <h1>hello world</h1>
+      <div class="second">
+        <h2>second heading</h2>
+      </div>
+    </div> -->
+
+    <!-- navigate to DOM - previousSibling, nextSibling, previousElementSibling, nextElementSbiling -->
+    <!-- <ul id="result">
+      <li id="special">first</li>
+      <li>list item 1</li>
+      <li id="special">list item 2</li>
+      <li>last</li>
+    </ul> -->
+
+    <!-- getAttribute() setAttribute() -->
+    <!-- <ul>
+      <li class="first">i have class of first</li>
+      <a href="#" id="link">random link</a>
+      <li>i have no attributes</li>
+    </ul> -->
+
+    <!-- classList and className -->
+    <!-- <h1 id="first">i'm first element</h1>
+    <h1 id="second">i'm second element</h1>
+    <h1 id="third">i'm third element</h1> -->
+
+    <!-- createElement, createTextNode, appendChild -->
+
+    <!-- insertBefore -->
+    <!-- <h1 id="title">hello im heading</h1>
+    <div>i m div</div> -->
+
+    <!-- replaceChild -->
+    <!-- <h1>im heading element</h1> -->
+
+    <!-- prepend, innerText -->
+    <!-- <h1>first heading</h1> -->
+
+    <!-- remove, removeChild -->
+    <!-- <h1>hello world</h1>
+    <div id="result">
+      <h1>first heading</h1>
+    </div> -->
+
+    <!-- innerHTML, innerText -->
+    <!-- <ul>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul> -->
+
+    <!-- change css with style property -->
+    <!-- <h1>im heading</h1> -->
+
+    <!-- events -->
+    <!-- <h2>events</h2>
+    <button class="btn">click me</button> -->
+
+    <!-- key events -->
+    <!-- <input type="text"> -->
+
+    <!-- event object -->
+    <!-- <button class="btn">click me</button>
+    <h1>heading</h1>
+    <a href="#" id="link">random link</a> -->
+
+    <!-- e.currentTarget vs e.target -->
+    <!-- <button class="btn">first button</button>
+    <button class="btn">
+      second <strong>strong <strong>more nested</strong></strong>
+    </button>
+    <button class="btn">third button</button> -->
+
+    <!-- forms -->
+    <!-- <form action="" id="form">
+      <input type="text" id="name" />w
+      <input type="password" id="password" />
+      <input type="submit" value="submit" />
+    </form> -->
+
+    <!-- DomContentLoaded, load -->
+    <!-- <button>click</button> -->
+
+    <!-- difference between mouseenter and mouseover -->
+    <!-- difference between mouseleave and mouseout -->
+    <!-- <div>
+      <button>click me <b>hello world</b> <em>everyone</em></button>
+    </div> -->
+
+    <!-- external js -->
+    <!-- script element must be positioned to bottom, before body end tag, othervise it doesn't work -->
+    <!-- custom js -->
+    <script src="../js/app.js"></script>
+    <script src="../js/DOM.js"></script>
+  </body>
+</html>

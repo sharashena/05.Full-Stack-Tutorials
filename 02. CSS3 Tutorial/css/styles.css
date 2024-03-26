@@ -1,0 +1,629 @@
+/* element selector */
+/* h1 {
+  font-size: 1.4rem;
+  color: red;
+} */
+
+/* grouping selector */
+/* h1,
+p {
+  color: red;
+} */
+
+/* ID selector === ID must be unique for each element  */
+/* #part1 {
+  color: red;
+} */
+
+/* class selector === class we can reuse for each element */
+/* h1.green specify specific element */
+/* .green {
+  color: green;
+}
+h1.green {
+  color: blue;
+}
+.red {
+  color: red;
+} */
+
+/* multiple classes */
+/* .green {
+  color: green;
+}
+.uppercase {
+  text-transform: uppercase;
+} */
+
+/* ID and class selector together === id always overrides class */
+/* #green {
+  color: blue;
+}
+.uppercase {
+  text-transform: uppercase;
+  color: green;
+} */
+
+/* override same selectors === last value will always override than the other ones */
+/* h1 {
+  color: blue;
+}
+h1 {
+  color: red;
+} */
+
+/* universal selector * === it refers to all element */
+/* * {
+  color: red;
+} */
+
+/* descendant selector */
+/* example 1 */
+/* div h1 {
+  color: green;
+} */
+/* example 2 with class */
+/* .container h1 {
+  color: red;
+} */
+/* example 3 with id */
+/* #container h1 {
+  color: blue;
+} */
+
+/* css units */
+
+/* pixels - absolute value, px is same on small and big screen */
+/* p {
+  font-size: 60px;
+} */
+
+/* em - relative value. depends on parent */
+/* 1em = 16px default browser style */
+/* p {
+  font-size: 3em;
+} */
+
+/* rem - relative value. depends on root */
+/* p {
+  font-size: 2em
+}
+p {
+  font-size: 3rem
+} */
+
+/* vh and vw. depends size of the screen */
+
+/* calc() - perform math operation */
+/* div {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: tomato;
+} */
+
+/* font-family. font of the text */
+/* font-weight. how thin or thick text should be. */
+/* text-indent. indent first line of text */
+/* line-height. increase/decrease distance between lines */
+/* letter-spacing. increase/decrease distance between spells */
+/* word-spacing. increase/decrease distance between words */
+/* text-decoration. none, underline, overline, line-through */
+/* text-transform.  capitalize, lowercase, uppercase */
+/* text-align: justify. each line is streched, so every line has equal width */
+/* text-align-last: left,center,right, justify. how to align last line of a text */
+
+/* css box model - padding */
+/* padding makes distance between border and context */
+
+/* div { */
+/* background: red;
+  width: 400px;
+  height: 300px; */
+/* padding-top: 10px;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  padding-right: 40px; */
+/* padding: 30px 15px; first is top and bottom and second right and left */
+/* padding: 20px; top, bottom, left, right  */
+/* padding: 15px 20px 30px 15px */
+/* } */
+
+/* margin */
+/* margin makes distance between elements */
+/* div { */
+/* background: red;
+  width: 400px;
+  height: 200px; */
+/* ........ same properties as padding has */
+/* } */
+
+/* border */
+
+/* div { */
+/* background-color: red;
+  width: 400px;
+  height: 200px; */
+/* border-top-color: seagreen;
+  border-bottom-color: yellow;
+  border-left-color: blue;
+  border-right-color: black;
+  border-top-style: solid;
+  border-bottom-style: double;
+  border-left-style: dotted;
+  border-right-style: dashed;
+  border-top-width: 5px;
+  border-bottom-width: 10px;
+  border-left-width: 7px;
+  border-right-width: 6px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 11px; */
+/* shortcuts */
+/* border: 1px solid seagreen;
+  border-radius: 15px; */
+/* } */
+
+/* outline */
+/* outline-offset will move outline around element */
+
+/* div { */
+/* background-color: #222;
+  width: 400px;
+  height: 200px;
+  border: 0.5rem solid seagreen;
+  margin: 2rem auto; */
+/* outline-width: 0.7rem;
+  outline-color: red;
+  outline-style: solid; */
+/* shortcut */
+/* outline: 0.7rem solid red;
+  outline-offset: -30px;
+  outline-offset:  10px; */
+/* } */
+
+/* horizontal centering */
+/* h1 {
+  background-color: blue;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+/* display: inline-block */
+/* browser respects margin, padding, width, height */
+/* displays inline but we can add top, bottom margin/padding */
+
+/* a {
+  background-color: blue;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+} */
+
+/* display:none, opacity, visibility */
+/* display: none will remove element from flow */
+/* opacity: 0 is just hidden element, but it uses space */
+/* visibility: hidden is same as opacity: 0 */
+
+/* background images */
+
+/* background-repeat === repeat is by default, repeat-x, repeat-y, no-repeat, space */
+/* .img { */
+/* background: url("../images/Porsche.png");
+  width: 100%;
+  height: 400px; */
+/* background-repeat: repeat; */
+/* background-repeat: repeat-x; */
+/* background-repeat: repeat-y; */
+/* background-repeat: no-repeat; */
+/* background-repeat: space; */
+/* } */
+
+/* background-size */
+/* .img {
+  background: url("../images/Porsche.png");
+  width: 100%;
+  height: 400px; */
+/* background-size: cover; will fill element  */
+/* background-size: contain; will fit element */
+/* } */
+
+/* background-position: 0.0 is default position. left, top, right, bottom, center */
+
+/* .img {
+  background: url("../images/Porsche.png");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed; img will stay in current position
+  background-attachment: scroll; default behavior
+} */
+
+/* shorthand  */
+/* background: url("../images/Lamborghini.jpg") center/cover no-repeat fixed; */
+
+/* background image overlay */
+/* .img {
+  background: linear-gradient(
+      250deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 100, 239, 0.5)
+    ),
+    url("../images/Lamborghini.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 400px;
+} */
+
+/* float property */
+/* removes element from flow */
+
+/* div {
+  width: 50%;
+  float: left;
+}
+.one {
+  background: blue;
+}
+.two {
+  background: red;
+}
+.three {
+  background: yellow;
+}
+.four {
+  background: green;
+}
+h1 {
+  clear: both;
+} */
+
+/* position: static. element is default flow */
+/* position: relative. element starts move from normal flow */
+/* position: absolute. element will be out from the flow and relative to parent */
+/* position: fixed. like navbar. during scroll, element will follow scroll */
+/* position: sticky. once we get close to sticky element, it will follow scroll */
+
+/* media queries */
+/* styles elements on different sizes */
+/* @media screen and (max-width: 800px) { it will work when browser width size will be below 800px
+        h1 {
+          color: red;
+        }
+      } */
+/* @media screen and (min-width: 800px) {  it will work when browser width size will be above 800px
+        h1 {
+          color: red;
+        }
+      } */
+
+/* when value is between 900 and 600px then it will work */
+/* @media screen and (min-width: 600px) and (max-width: 900px) {
+  h1 {
+    color: red;
+} */
+
+/* z-index === specifies order of an element  */
+/* each element z-index by default is 0 */
+/* z-index doesn't work on position:static */
+
+/* .container {
+  border: 3px solid red;
+  height: 300px;
+  position: relative;
+}
+img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.one {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.two {
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+}
+.three {
+  top: 10%;
+  left: 10%;
+  border: 1px solid green;
+  z-index: 2;
+} */
+
+/* ::before ::after pseudo elements create element and insert before and after content */
+/* content: '' is required */
+/* img is content itself, thats why for img doesn't work */
+
+/* p::before {
+  content: "hello ";
+  font-size: 1.2rem;
+  font-style: italic;
+}
+p::after {
+  content: " hi";
+  color: green;
+} */
+
+/* descendant and child selectors */
+/* greater than > === direct descendant, only selects children */
+
+/* .container > h1 {
+  color: red;
+} */
+
+/* first-line & first-letter */
+/* p::first-letter {
+  font-size: 2rem;
+}
+p::first-line {
+  color: red;
+} */
+
+/* links */
+/* :link === unvisited links with href */
+/* :visited === visited links */
+/* :hover === when user will mouse over an element */
+/* :active === during clicking an element */
+
+/* a {
+  display: block;
+}
+a:link {
+  color: orange;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: tomato;
+}
+a:active {
+  color: yellow;
+} */
+
+/* :root === root element of the document, it has higher privilegy than html element */
+
+/* transform properties */
+/* transform: translate */
+/* translateX() moves element along x-axis */
+/* translateY() moves element along y-axis */
+/* shorthand */
+/* translate(x-axis, y-axis) moves element along both axis */
+
+/* div {
+  background-color: red;
+  width: 200px;
+  height: 150px;
+  transform: translateX(5rem);
+  transform: translateY(5rem);
+  transform: translate(30px, 50px);
+} */
+
+/* transform: scale */
+/* how many values we will enter, element will become bigger than its normal size */
+/* transform: scaleX(x-axis) */
+/* transform: scaleY(y-axis) */
+/* shorthand */
+/* transform: scale(x-axis, y-axis) */
+/* div {
+  background-color: red;
+  width: 200px;
+  height: 150px;
+  transform: scaleX(4);
+  transform: scaleY(2);
+  transform: scale(2, 4);
+} */
+
+/* transform: rotate(degree) will rotate element */
+/* transform: skew(degree) will skew element */
+
+/* transitions */
+/* transition-property === which property we should control */
+/* transition-delay */
+
+/* div {
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+} */
+/* .one { */
+/* background-color: coral;
+  transition-property: background-color, border-radius;
+  transition-duration: 3s, 1s;
+  transition-delay: 1s; */
+/* shorthand */
+/* transition: background-color 3s 1s, border-radius 1s 1.5s; */
+/* } */
+/* .one:hover {
+  border-radius: 50%;
+  background-color: red;
+} */
+
+/* transition-timing-function */
+/* ease === default */
+/* ease === slow start, fast, slow end */
+/* linear === same speed start to end, slow start, slow end */
+/* ease-in === slow start, fast end */
+/* ease-out === fast start, slow end */
+/* ease-in-out === slow start, fast, slow end */
+
+/* animations */
+/* animation-fill-mode last value will be stay after complete animation */
+/* animation-fill-mode works if animation-iteration-count isn't infinite */
+/* animation-fill-mode: backwards is default */
+/* animation-direction works if iteration-count is more than 1 */
+/* animation-direction normal - default */
+/* animation-direction reverse */
+/* animation-direction alternate - forward first, then backward  */
+/* animation-direction alternate-reverse - backward first, then forward  */
+/* animation-play-state === specifies whether the animation is running or paused. */
+/* animation-play-state: paused; */
+/* animation-play-state: running; */
+/* div {
+  width: 300px;
+  height: 200px;
+  background-color: red; */
+/* animation-name: move;
+  animation-duration: 5s;
+  animation-delay: 0.5s,
+  animation-iteration-count: 3; also infinite
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; */
+/* shorthand */
+/* animation: move 3s 0.3s 2 linear;
+} */
+
+/* @keyframes move {
+  0% {
+    transform: translateX(100px);
+    background-color: red;
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(100px);
+    background-color: tomato;
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(100px);
+    background-color: blue;
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    background-color: green;
+    opacity: 1;
+  }
+} */
+
+/* CSS3 variables */
+/* variables will store value and we can use it whenever we want */
+/* --primaryColor: #333 */
+/* property: var(--primaryColor) */
+
+/* :root {
+  --primaryColor: rgb(231, 9, 9);
+  --mainFontSize: 2rem;
+}
+p {
+  color: var(--primaryColor);
+  font-size: var(--mainFontSize);
+} */
+
+/* text shadow & box-shadow */
+/* text-shadow: 1. x-axis 2. y-axis 3. blur 4. color */
+/* box-shadow: 1. x-axis 2. y-axis 3. blur 4. color */
+
+/* h1 {
+  text-shadow: 3px 2px 5px red;
+} */
+/* .box {
+  width: 250px;
+  height: 150px;
+  background-color: blue;
+  box-shadow: 10px 15px 5px red ;
+} */
+
+/* object-fit: cover, contain, fill - default */
+/* height is required */
+/* cover will fill photo */
+/* contain will fit photo */
+
+/* img { */
+/* width: 300px;
+  height: 200px; */
+/* object-fit: cover; */
+/* object-fit: contain; */
+/* object-fit: fill; */
+/* } */
+
+/* caption-side: top === side of table title */
+/* caption-side: bottom */
+
+/* empty-cells === hide/show table cells */
+/* empty-cells: hide */
+/* empty-cells: show */
+
+/* overflow: hidden */
+/* overflow: scroll */
+/* overflow-x: hidden */
+/* overflow-y: hidden */
+
+/* div + p === it will select first p element after div element */
+
+/* .box1 + p {
+  color: red;
+} */
+
+/* div ~ p === it will select all p element after div element */
+
+/* .box1 ~ p {
+  color: red;
+} */
+
+/* attribute selectors */
+
+/* select elements with a specified attribute */
+/* a[class] {
+  background-color: red;
+} */
+/* sleect element with a specified attribute and value */
+/* a[class="box1"] {
+  background-color: red;
+} */
+/* select elements with a specified attr and containing a specified word. */
+/* a[title~="1"] {
+  background-color: red;
+} */
+/* select elements with a specified attr, which contains specific spells */
+/* a[class*="ox"] {
+  background-color: red;
+} */
+/* select elements with a specified attr, whose value starts with the specified value */
+/* a[class^="bo"] {
+  background-color: red;
+} */
+/* select elements with a specified attr, whose value ends with the specified value */
+/* a[class$="x1"] {
+  background-color: red;
+} */
+
+/* resize === in textarea. resize: none - can't resizable, horizontal, vertical, both - default */
+
+/* !important rule */
+/* important will override inline, external and internal styles */
+
+/* h1 {
+  background-color: red !important;
+} */
+
+/* writing-mode text displayed horizontaly and verticaly */
+/* writing-mode: horizontal-rl === right to left, also lr - default */
+/* writing-mode: vertical-rl, also lr */
+
+/* filter: blur(px) will blur image */
+
+/* column-count: number of columns */
+/* column-gap: px === gap between columns */
+/* column-rule-style: solid */
+/* column-rule-width */
+/* column-rule-color */
+/* shorthand */
+/* column-rule: 1px solid lightblue */
+
+/* accent-color property specifies the color for user-interface controls like: <input type="checkbox">, <input type="radio">, <input type="range"> and <progress>. */
+/* [type^="ch"] {
+  accent-color: tomato;
+}
+[type$="io"] {
+  accent-color: orange;
+}
+[type="range"] {
+  accent-color: black;
+} */
+
+/* caret-color === input cursor color */

@@ -1,0 +1,387 @@
+/* display: flex === it is blockline element */
+/* elements will be side by side */
+/* display: inline-flex === it takes only space that container has */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  display: inline-flex;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+} */
+
+/* flex-direction */
+/* row (by default), row-reverse === flip order of the items, column, column-reverse */
+/* by default main axis is horizontal line, cross axis vertical. when direction is column, main axis will change to vertical and vice versa */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+}
+.generic {
+  background-color: #202c59;
+} */
+
+/* flex-wrap === if it's not enough space along items it will fit box automaticaly */
+/* nowrap (by default), wrap, wrap-reverse */
+/* flex-flow is shorthand property for setting both 1. flex-direction and 2. flex-wrap */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  flex-flow: column wrap;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+}
+.generic {
+  background-color: #202c59;
+} */
+
+/* justify-content === horizontal alignment */
+/* flex-start (by default), flex-end === align items right hand side */
+/* center === align items in center */
+/* space-between === spaces between items, first item is at start and last at end */
+/* space-around === side margins */
+/* space-evenly === even margins */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+} */
+
+/* align-items === vertical alignment, set height is important */
+/* stretch (by default) === stretch items along top to bottom */
+/* flex-start === align top of the container */
+/* flex-end === align bottom of the container */
+/* center === align center */
+/* baseline === align items to where content is */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  height: 400px;
+  align-items: stretch;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: baseline;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+  baseline example
+  font-size: 3rem;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+} */
+
+/* align-content === it works if we have multiple lines (flex-wrap: wrap) */
+/* stretch (by default), flex-start, flex-end, space-around, space-between, space-evenly, center */
+/* it moves along y-axis with multiple flex lines */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+  align-content: center;
+  height: 400px;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+}
+.generic {
+  background-color: #202c59;
+} */
+
+/* align-self === if we want to move single item to different positon */
+/* flex-start */
+/* flex-end */
+/* stretch */
+/* center */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  align-items: flex-start;
+  height: 400px;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+  align-self: flex-end;
+}
+.box-2 {
+  background-color: #f0a202;
+  align-self: stretch;
+}
+.box-3 {
+  background-color: #d95d39;
+  align-self: center;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+  align-self: flex-end;
+} */
+
+/* order property === order of the items */
+/* all children have order: 0 by default */
+/* if order will be higher than other ones, it will go to the end */
+/* negative order item will go at start */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+  order: 1;
+}
+.box-2 {
+  background-color: #f0a202;
+  order: 4;
+}
+.box-3 {
+  background-color: #d95d39;
+  order: 2;
+}
+.box-4 {
+  background-color: #518f18;
+  order: -4;
+}
+.box-5 {
+  background-color: #f00000;
+  order: 5;
+} */
+
+/* flex-grow === allow us to fill space in container */
+/* children are growing how much they can to fit container */
+/* all children have flex-grow: 0 by default */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  height: 400px;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+  flex-grow: 1;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+  flex-grow: 2;
+}
+.box-5 {
+  background-color: #f00000;
+} */
+
+/* flex-shrink */
+/* all children have flex-shrink: 1 by default */
+/* by default all elements are shrinking, when we resize browser, to prevent that behavior we should set flex-shrink: 0 */
+/* we should use flex-shrink to single children where we want to prevent shrinking */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  height: 400px;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+}
+.box-3 {
+  background-color: #d95d39;
+  width: 200px;
+  flex-shrink: 0;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+} */
+
+/* flex-basis === flex-basis:150px is base value of an item */
+/* flex shortcut === 1. flex-grow 2. flex-shrink. flex-basis */
+/* .container {
+  border: 5px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
+.box {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  flex: 1 0 200px;
+}
+.box-1 {
+  background-color: #581f18;
+}
+.box-2 {
+  background-color: #f0a202;
+  flex-basis: 150px;
+}
+.box-3 {
+  background-color: #d95d39;
+}
+.box-4 {
+  background-color: #518f18;
+}
+.box-5 {
+  background-color: #f00000;
+} */
